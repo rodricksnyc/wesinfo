@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 $(window).resize(function(){
-	if ($(window).width() >= 980){
+	if ($(window).width() >= 1199){
 
       $(".navbar .dropdown-toggle").mouseenter(function () {
          $(this).parent().toggleClass("show");
