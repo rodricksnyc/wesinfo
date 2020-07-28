@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-$(window).resize(function(){
+
 	if ($(window).width() >= 1199){
 
       $(".navbar .dropdown-toggle").mouseenter(function () {
@@ -12,8 +12,15 @@ $(window).resize(function(){
       $( ".navbar .dropdown-menu" ).mouseleave(function() {
         $(this).removeClass("show");
       });
+
+
+			$(".right .nav-link").click(function () {
+
+         $(".right .menu2").toggleClass("showIt");
+       });
+
 	}
-});
+
 
 
 var proxy = 'https://cors-anywhere.herokuapp.com/';
