@@ -219,7 +219,7 @@ a:hover {
   .right .menu2 {
     position: absolute;
 
-    min-width: 250px;
+    min-width: 300px;
     border-radius: 0px;
     top: 68px;
     right:-20px;
@@ -233,6 +233,17 @@ a:hover {
 
   .dropdown-item {
     text-align: left;
+  }
+
+  .menu2 a {
+    color:#0e7b9b;
+    font-size: 21px;
+    font-weight:500;
+  }
+
+  .menu2 i {
+    font-size: 21px;
+    color:#0e7b9b !important
   }
 
 
@@ -394,4 +405,74 @@ a:hover {
     font-size: 15px;
 
   }
+}
+@media screen and (max-width: 1199px) {
+
+  .nav-item i {
+    display: none;
+  }
+
+  .top-search-input-wrapper {
+    position: relative;
+  }
+
+  .form-control.allResults {
+    border-bottom: 1px solid white;
+    border-radius: .7rem;
+    text-overflow: ellipsis;
+    color: black;
+    opacity: .9;
+  }
+
+  i.fa-search.allResults {
+    position: absolute;
+    right: .5rem;
+    top: .6rem;
+    cursor: pointer;
+    color: #07477d;
+    font-weight: 500;
+
+  }
+
+  .weather-api {
+    display: flex;
+    margin-left:1em;
+  }
+  .whiteLarge {
+    color: white;
+    margin-bottom: 0em;
+    margin-top: 0em;
+    font-size:14px;
+  }
+
+  .form-inline {
+    align-items: baseline;
+  }
+
+  .navbar a:hover {
+    color: white;
+
+  }
+  .user {
+    background: none !important;
+    color: white;
+    outline: none;
+    border: none;
+  }
+
+  .user:hover {
+    color: white;
+
+  }
+
+  .dropdown-item{
+    color:white;
+  }
+
+  .dropdown-item:hover,
+  .dropdown-item:active,
+  .dropdown-item:focus{
+    background: none;
+  }
+
 }
