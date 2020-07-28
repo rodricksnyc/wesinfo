@@ -4,6 +4,11 @@ body {
 
 }
 
+
+h1, h2, h3, h4, h5, h6, p, a, li {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .navbar{
   /* background: rgb(8,73,126);
   background: linear-gradient(90deg, rgba(8,73,126,1) 0%, rgba(18,103,142,1) 19%, rgba(25,123,153,1) 37%); */
@@ -143,7 +148,24 @@ a:hover {
     color: white;
     min-width: 8rem;
     max-height: 2rem;
+    /* display: flex;
+justify-content: center;
+align-items: center;
+padding: 1em;
+height: 3em;
+padding-top: 1.7em; */
   }
+
+  .user:hover {
+	background:#00467f
+
+}
+
+.user:focus,
+.user:active {
+  outline:none;
+}
+
   .smaller {
     font-size: 14px;
     color: white;
@@ -218,7 +240,7 @@ a:hover {
 
   .right .menu2 {
     position: absolute;
-
+    z-index: 99999;
     min-width: 300px;
     border-radius: 0px;
     top: 68px;
@@ -476,3 +498,6 @@ a:hover {
   }
 
 }
+
+
+/* sharepoint class settings */
