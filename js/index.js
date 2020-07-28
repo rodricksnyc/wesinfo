@@ -23,7 +23,7 @@ $(document).ready(function() {
 
 
 
-	var proxy = 'https://cors-anywhere.herokuapp.com/';
+	// var proxy = 'https://cors-anywhere.herokuapp.com/';
 
 	var Ip = 'https://ipinfo.io/json';
 
@@ -34,11 +34,11 @@ $(document).ready(function() {
 
 		// var KEY = '&APPID=b2f2b923be22181ef89baa544605b888';
 
-		var URL = 'http://api.openweathermap.org/data/2.5/weather?id=4367175&appid=b2f2b923be22181ef89baa544605b888'
+		var URL = 'https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?id=4367175&appid=b2f2b923be22181ef89baa544605b888'
 
 		// var URL ='http://api.openweathermap.org/data/2.5/weather?q=' + city + ',' + region + country + KEY;
 
-		$.getJSON(proxy + URL, function(data) {
+		$.getJSON(URL, function(data) {
 			var type = data.weather[0].main;  //array 0 index
 			var id = data.weather[0].id; //array 0 index
 			var city = data.name;
