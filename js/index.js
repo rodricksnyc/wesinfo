@@ -16,8 +16,16 @@ $(document).ready(function() {
 
 		$(".right .nav-link").click(function () {
 
+			$('.contactUsOverlay').show();
+
 			$(".right .menu2").toggleClass("showIt");
 		});
+
+		$('.contactUsOverlay').on('click', function(e) {
+		
+			$(".right .menu2").toggleClass("showIt");
+
+		})
 
 	}
 
