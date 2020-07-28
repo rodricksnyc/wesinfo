@@ -6,7 +6,7 @@ body {
 
 
 h1, h2, h3, h4, h5, h6, p, a, li {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .navbar{
@@ -57,7 +57,7 @@ a:hover {
 }
 
 
-@media screen and (min-width: 1360px) {
+@media screen and (min-width: 1468px) {
 
   .form-control.allResults {
 
@@ -149,22 +149,40 @@ a:hover {
     min-width: 8rem;
     max-height: 2rem;
     /* display: flex;
-justify-content: center;
-align-items: center;
-padding: 1em;
-height: 3em;
-padding-top: 1.7em; */
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    height: 3em;
+    padding-top: 1.7em; */
   }
 
   .user:hover {
-	background:#00467f
+    background:#00467f
 
-}
+  }
 
-.user:focus,
-.user:active {
-  outline:none;
-}
+  .user:focus,
+  .user:active {
+    outline:none;
+  }
+
+  .rel {
+    position: relative;
+  }
+
+  .whiteColor {
+    color:white;
+    position: absolute;
+    top:25%;
+    font-size:24px;
+  }
+
+  .redColor {
+    color:red;
+    position: absolute;
+    top:25%;
+    font-size:24px;
+  }
 
   .smaller {
     font-size: 14px;
@@ -498,6 +516,87 @@ padding-top: 1.7em; */
   }
 
 }
+
+/* charm bar */
+
+.stickyBar {
+  background: rgb(14,123,155);
+  background: linear-gradient(180deg, rgba(14,123,155,1) 29%, rgba(41,169,167,1) 85%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+  padding:.8rem .7rem;
+  position: fixed;
+  right: 3px;
+  top: 20%;
+  z-index:999999;
+}
+
+.stickyBar i {
+  color:white;
+  font-size:26px;
+}
+
+.stickyBar i.staff{
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 8px;
+
+  right: -7px;
+  transform: rotate(98deg);
+  background: #0e7b9b;
+  border-radius: 4rem;
+  transform: scaleX(-1);
+}
+
+.stickyBar i.timesheets{
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 13px;
+  right: -11px;
+  transform: rotate(98deg);
+  background: #0e7b9b;
+  border-radius: 4rem;
+  transform: scaleX(-1);
+}
+
+
+.stickyBar i.projects{
+  color: white;
+  font-size: 22px;
+  position: absolute;
+  top: 9px;
+  righ: 10px;
+  /* right: -11px; */
+  transform: rotate(82deg);
+  border-radius: 4rem;
+  /* transform: scaleX(1); */
+  left: -8px;
+  z-index: 999;
+  font-weight: 400;
+}
+
+
+.stickyBar .rel {
+  margin:1em 0em
+}
+
+.rotate {
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* sharepoint class settings */
