@@ -166,9 +166,6 @@ a:hover {
     outline:none;
   }
 
-  .rel {
-    position: relative;
-  }
 
   .whiteColor {
     color:white;
@@ -239,6 +236,7 @@ a:hover {
   .d-lg-block {
     position: relative;
     z-index:10;
+    left: -1%;
   }
   /* span.right:before {
 
@@ -277,7 +275,7 @@ a:hover {
 
   .menu2 a {
     color:#0e7b9b;
-    font-size: 19px;
+    font-size: 18px;
     font-weight:500;
   }
 
@@ -517,7 +515,28 @@ a:hover {
 
 }
 
+@media (min-width:1440px) and (max-width:1599px){
+    .d-lg-block {
+      left:-5%
+
+    }
+}
+
+
+@media (min-width:1600px){
+    .d-lg-block {
+      left:-8%
+
+    }
+}
+
+
 /* charm bar */
+
+
+  .rel {
+    position: relative;
+  }
 
 .stickyBar {
   background: rgb(14,123,155);
@@ -529,7 +548,7 @@ a:hover {
   padding:.8rem .7rem;
   position: fixed;
   right: 3px;
-  top: 20%;
+  top: 30%;
   z-index:999999;
 }
 
@@ -586,12 +605,13 @@ a:hover {
 
 
 .contactUsOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 98;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 98;
 }
 
 

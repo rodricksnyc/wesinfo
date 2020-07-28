@@ -16,16 +16,32 @@ $(document).ready(function() {
 
 		$(".right .nav-link").click(function () {
 
+			$('.contactUsOverlay').show();
+
 			$(".right .menu2").toggleClass("showIt");
 		});
 
 		$('.contactUsOverlay').on('click', function(e) {
 
-			$(".right .menu2").toggleClass("showIt");
+			if ($(".right .menu2").hasClass('showIt')) {
+				$(".right .menu2").toggleClass("showIt");
+				$('.contactUsOverlay').hide();
+			}
 
 		})
 
 	}
+
+
+	$(".stickyBar .rel").mouseenter(function () {
+		$(this).toggleClass("showDiv");
+
+	});
+
+
+	$(".stickyBar .rel").mouseleave(function() {
+		$(this).removeClass("showDiv");
+	});
 
 
 
