@@ -33,22 +33,7 @@ $(document).ready(function() {
 	}
 
 
-	// var charm = $(".stickyBar").width()
-	// console.log(charm)
-
-	// var directory = $('.directory').width() + 60
-	//
-	//
-	// $('.directory').css({
-	// 	'position' : 'absolute',
-	// 	'top' : '-18px',
-	// 	'left' : -(directory)
-	// })
-
-
-
 	var sheets = $('.corresponding').width() + 11
-
 
 	$('.corresponding').css({
 		'position' : 'absolute',
@@ -59,8 +44,11 @@ $(document).ready(function() {
 
 
 
+
+
 	$(".stickyBar .rel").mouseenter(function () {
 		$(this).toggleClass("showDiv");
+		$(this).find('.corresponding').addClass('hovered')
 
 		if($(this).hasClass('showDiv')) {
 			$(this).find('.corresponding').show()
@@ -70,6 +58,7 @@ $(document).ready(function() {
 
 
 	});
+
 
 
 	$(".stickyBar .rel").mouseleave(function() {
@@ -82,11 +71,6 @@ $(document).ready(function() {
 
 	$(".outer").mouseleave(function(){
  			$(this).find('.corresponding').hide()
-
-
-			if(!$(this).hasClass('showDiv')) {
-				$(this).find('.corresponding').hide()
-			}
 
 		});
 
@@ -135,6 +119,18 @@ $(document).ready(function() {
 		});
 	});
 
+//508 tabbing
+
+	$("a, button, input, [tabIndex='0']").on("keyup", function (e) {
+		var code = (e.keyCode ? e.keyCode : e.which);
+		if (code == 9) {
+			$(this).css('outline', 'dashed 3px #4599ff')
+		}
+
+	})
+	$("a, button, input, [tabIndex='0']").on('focusout', function() {
+		$(this).css('outline', 'none')
+	})
 
 
 
