@@ -519,7 +519,8 @@ a:hover {
 
 }
 
-/* @media (min-width:1440px) and (max-width:1599px){
+
+@media (min-width:1440px) and (max-width:1599px){
 .d-lg-block {
 left:-5%
 
@@ -532,7 +533,7 @@ left:-5%
 left:-8%
 
 }
-} */
+}
 
 
 /* charm bar */
