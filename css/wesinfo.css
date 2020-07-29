@@ -4,6 +4,46 @@ body {
 
 }
 
+.container-fluid {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: 0;
+  margin-left: 0;
+  min-height: 100;
+  position: relative;
+  padding-bottom: 120px;
+
+  min-height: calc(100vh - 10rem);
+  position: relative;
+}
+footer {
+  background:#00467f;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  min-height: 5.5rem;
+}
+
+.img-wes-logo {
+  height:3em;
+
+}
+
+.t-white {
+  color:white;
+  margin-bottom:5px
+}
+
+.footer-wrapper {
+
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 h1, h2, h3, h4, h5, h6, p, a, li {
   font-family: 'Montserrat', sans-serif;

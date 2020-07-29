@@ -70,9 +70,9 @@ $(document).ready(function() {
 	});
 
 	$(".outer").mouseleave(function(){
- 			$(this).find('.corresponding').hide()
+		$(this).find('.corresponding').hide()
 
-		});
+	});
 
 
 
@@ -88,8 +88,8 @@ $(document).ready(function() {
 
 		// var KEY = '&APPID=b2f2b923be22181ef89baa544605b888';
 
- var proxy = 'https://cors-anywhere.herokuapp.com/';
- // var apiLinkDS = "https://api.darksky.net/forecast/e6af5b5feb891b272e18f5e2fc0370a6/38,-122";
+		var proxy = 'https://cors-anywhere.herokuapp.com/';
+		// var apiLinkDS = "https://api.darksky.net/forecast/e6af5b5feb891b272e18f5e2fc0370a6/38,-122";
 
 
 		var URL = 'http://api.openweathermap.org/data/2.5/weather?id=4367175&appid=b2f2b923be22181ef89baa544605b888'
@@ -119,7 +119,7 @@ $(document).ready(function() {
 		});
 	});
 
-//508 tabbing
+	//508 tabbing
 
 	$("a, button, input, [tabIndex='0']").on("keyup", function (e) {
 		var code = (e.keyCode ? e.keyCode : e.which);
