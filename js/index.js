@@ -33,15 +33,63 @@ $(document).ready(function() {
 	}
 
 
+	// var charm = $(".stickyBar").width()
+	// console.log(charm)
+
+	// var directory = $('.directory').width() + 60
+	//
+	//
+	// $('.directory').css({
+	// 	'position' : 'absolute',
+	// 	'top' : '-18px',
+	// 	'left' : -(directory)
+	// })
+
+
+
+	var sheets = $('.corresponding').width() + 11
+
+
+	$('.corresponding').css({
+		'position' : 'absolute',
+		'top' : '-18px',
+		'left' : -(sheets)
+	})
+
+
+
+
 	$(".stickyBar .rel").mouseenter(function () {
 		$(this).toggleClass("showDiv");
+
+		if($(this).hasClass('showDiv')) {
+			$(this).find('.corresponding').show()
+		}
+
+
+
 
 	});
 
 
 	$(".stickyBar .rel").mouseleave(function() {
 		$(this).removeClass("showDiv");
+		if(!$(this).hasClass('showDiv') ) {
+			$(this).find('.corresponding').hide()
+		}
+
 	});
+
+	$(".outer").mouseleave(function(){
+ 			$(this).find('.corresponding').hide()
+
+
+			if(!$(this).hasClass('showDiv')) {
+				$(this).find('.corresponding').hide()
+			}
+
+		});
+
 
 
 
@@ -56,11 +104,15 @@ $(document).ready(function() {
 
 		// var KEY = '&APPID=b2f2b923be22181ef89baa544605b888';
 
-		var URL = 'https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?id=4367175&appid=b2f2b923be22181ef89baa544605b888'
+ var proxy = 'https://cors-anywhere.herokuapp.com/';
+ // var apiLinkDS = "https://api.darksky.net/forecast/e6af5b5feb891b272e18f5e2fc0370a6/38,-122";
+
+
+		var URL = 'http://api.openweathermap.org/data/2.5/weather?id=4367175&appid=b2f2b923be22181ef89baa544605b888'
 
 		// var URL ='http://api.openweathermap.org/data/2.5/weather?q=' + city + ',' + region + country + KEY;
 
-		$.getJSON(URL, function(data) {
+		$.getJSON(proxy + URL, function(data) {
 			var type = data.weather[0].main;  //array 0 index
 			var id = data.weather[0].id; //array 0 index
 			var city = data.name;
@@ -68,14 +120,14 @@ $(document).ready(function() {
 			var tempCel = Math.round(data.main.temp - 273.15);
 			var tempC = tempCel + '°C';
 			var weather = data.weather[0].description;
-			var tempF = Math.round(tempCel * (9 / 5) + 32) + '°F';
+			// var tempF = Math.round(tempCel * (9 / 5) + 32) +  "<p>" +  "&deg; F" + "</p>" ;
 			var icon = data.weather[0].icon;
 			var tempBool = true;
 
 			//Output data to display on the page
 			$('#city').text(city);
 			$('#state').text(region);
-			$('#temp').text(tempF); //Show Fahrenheit by Default
+			$("#temp").html("<p>" + Math.round(tempCel * (9 / 5) + 32) +  "&deg; F" + "</p>");
 			var weatherIcon = 'http://openweathermap.org/img/w/' + icon + '.png';
 			$('#wIcon').html('<img src=' + weatherIcon + '>');
 
