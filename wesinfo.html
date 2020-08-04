@@ -15,8 +15,6 @@
 </head>
 <body>
 
-
-
 	<nav class="navbar navbar-expand-xl navbar-inverse bg-inverse">
 		<a href="#" class="brand navbar-brand d-lg-non"><h1 class="white">Wes<span class="strong">Info</span></h1></a>
 
@@ -435,7 +433,7 @@
 	<div class="container-fluid">
 
 		<div class="contactUsOverlay"></div>
-		<div class="rel outer">
+		<div class="rel outer" id="outer">
 			<div class="stickyBar">
 				<div class="rel">
 					<div class="corresponding">
@@ -501,11 +499,25 @@
 
 			<div class="rel">
 				<div class="corresponding">
-					<div class="bookmarks">
-						<p>Bookmarks</p>
+					<div class="forms">
+
+						<p class="top">Forms</p>
+						<ul class="largeBullets">
+
+							<li class="tealFont">Corportate Marketing Materials Request&nbsp;<i class="fal fa-file-pdf lightBlue"></i></li>
+							<li class="tealFont">401(k) Participant Contribution Change Form&nbsp;<i class="fal fa-file-pdf lightBlue"></i></li>
+							<li class="tealFont">Remote User Access Request&nbsp;<i class="fal fa-file-pdf lightBlue"></i></li>
+							<li class="tealFont">Pledge of Confidentiality of Survey Data (Assurance Statement)&nbsp;<i class="fal fa-file-pdf lightBlue"></i></li>
+							<li class="tealFont">Business Size Self-Certification Form&nbsp;<i class="fal fa-file-pdf lightBlue"></i></li>
+
+						</ul>
+
+						<p class="tealFont text-center">See All</p>
+
 					</div>
+
 				</div>
-				<img src="images/Frame.svg">
+				<img src="images/forms-icon.svg">
 
 			</div>
 
@@ -517,27 +529,70 @@
 
 <footer>
 	<div class="footer-wrapper">
-
-		<a href="https://www.westat.com" target="_blank" title="Visit website">
-			<img src="images/footer_westat_logo.svg" alt="Westat Home page" title="Westat" class="img-wes-logo"></a>
-			<div class="d-flex flex-column align-items-start">
-
-				<p class="t-white">Need help? Call the PC HelpDesk at (301) 251-4292.</p>
-				<p class="t-white">Have feedback? Share your thoughts here!</p>
-
-				<p class="t-white">&copy;1996- 2020 Westat Inc. All rights reserved.</p>
+		<div class="d-flex justify-content-start align-items-center">
+			<a href="https://www.westat.com" target="_blank" title="Visit website">
+				<img src="images/footer_westat_logo.svg" alt="Westat Home page" title="Westat" class="img-wes-logo">
+			</a>
 
 
+		<div class="social  d-flex justify-content-between">
+			<a href="https://www.facebook.com/westat.hq" class="plain" target="_blank">
+				<div class="rel">
+					<i class="fas fa-circle"></i>
+					<i class="fab fa-facebook-f"></i>
+				</div>
+			</a>
+			<a href="https://www.linkedin.com/company/westat" class="plain" target="_blank">
+				<div class="rel">
+					<i class="fas fa-circle"></i>
+					<i class="fab fa-linkedin-in"></i>
+				</div>
+			</a>
+			<a href="https://twitter.com/westat" class="plain" target="_blank">
+				<div class="rel">
+
+					<i class="fas fa-circle"></i>
+					<i class="fab fa-twitter"></i>
+				</div>
+			</a>
+		</div>
+
+	</div>
+		<div class="d-flex flex-column align-items-end">
+
+			<div class="d-flex justify-content-around align-items-center">
+				<p class="t-white smaller">Need help? Call the PC HelpDesk at (301) 251-4292.</p>
+				<div class="flipTwo"></div>
+				<p class="t-white smaller">Have feedback? Share your thoughts here!</p>
 			</div>
 
-		</footer>
+			<p class="t-white smaller">&copy;1996- 2020 Westat Inc. All rights reserved.</p>
+
+
+		</div>
+	</div>
+
+</footer>
 
 
 
 
-		<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
+<script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
 
-		<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/index.js"></script>
-	</body>
-	</html>
+<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+<!-- <script>
+
+// $('.corresponding').click(function() {
+// 	$(this).show()
+// })
+
+function keepFocussed(n){
+$(n).focus();
+}
+
+
+</script> -->
+</body>
+</html>

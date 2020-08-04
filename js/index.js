@@ -42,38 +42,62 @@ $(document).ready(function() {
 	})
 
 
+var allStickyRels = $(".stickyBar .rel");
+$(allStickyRels).attr("tabIndex", "0")
+
+var closeAllStickyRels = function(){
+	for( i=0; i<allStickyRels.length; i++ ){
+		$(allStickyRels[i]).removeClass("showDiv");
+	}
+}
+
+$(".stickyBar .rel").mouseenter(function(){
+	if($(this).hasClass('showDiv')) {
+		/* already open */
+	} else {
+		closeAllStickyRels();
+		$(this).addClass("showDiv");
+	};
+});
+$(".stickyBar .rel").focus(function(){
+	if($(this).hasClass('showDiv')) {
+		/* already open */
+	} else {
+		closeAllStickyRels();
+		$(this).addClass("showDiv");
+	};
+});
+
+$(".stickyBar .rel .corresponding").mouseleave(function(){
+  $(this).parent().removeClass("showDiv");
+})
 
 
 
-
-	$(".stickyBar .rel").mouseenter(function () {
-		$(this).toggleClass("showDiv");
-		$(this).find('.corresponding').addClass('hovered')
-
-		if($(this).hasClass('showDiv')) {
-			$(this).find('.corresponding').show()
-		}
-
-
-
-
-	});
-
-
-
-	$(".stickyBar .rel").mouseleave(function() {
-		$(this).removeClass("showDiv");
-		if(!$(this).hasClass('showDiv') ) {
-			$(this).find('.corresponding').hide()
-		}
-
-	});
-
-	$(".outer").mouseleave(function(){
-		$(this).find('.corresponding').hide()
-
-	});
-
+	// $(".stickyBar .rel").mouseenter(function () {
+	// 		$(this).addClass("showDiv");
+	//
+	//
+	// 		if($(this).hasClass('showDiv')) {
+	// 			$(this).find('.corresponding').show()
+	// 		}
+	//
+	//
+	// 	});
+	//
+	// 	$(".stickyBar .rel").mouseleave(function() {
+	// 		$(this).removeClass("showDiv");
+	// 		if(!$(this).hasClass('showDiv') ) {
+	// 			$(this).find('.corresponding').hide()
+	// 		}
+	//
+	// 	});
+	//
+	// 	$(".outer").mouseleave(function(){
+	//
+	// 		$(this).find('.corresponding').hide()
+	//
+	// 	});
 
 
 

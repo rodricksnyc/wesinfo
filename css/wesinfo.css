@@ -299,11 +299,11 @@ a:hover {
 
   .right .menu2 {
     position: absolute;
-    z-index: 99999;
+    z-index: 99999999;
     min-width: 300px;
     border-radius: 0px;
     top: 68px;
-    right:-20px;
+    right: -10px;
     padding: 1em 0em;
     background-color: white;
     -webkit-box-shadow: 0px 0px 14px -1px rgba(0,0,0,0.33);
@@ -593,7 +593,7 @@ left:-8%
   padding:.8rem .7rem;
   position: fixed;
   right: 3px;
-  top: 30%;
+  top: 20%;
   z-index:999999;
 }
 
@@ -663,10 +663,32 @@ left:-8%
   display: none;
 }
 
+.largeBullets{
+
+  padding-left:1em;
+}
+
+.largeBullets li {
+  list-style: none;
+  margin:.5em 0em;
+}
+
+.largeBullets li:before {
+  content: '\2022';
+  display: block;
+  position: relative;
+  max-width: 0px;
+  max-height: 0px;
+  left: -14px;
+  top: -14px;
+  color: #2fbaad;
+  font-size: 30px;
+}
+
 
 .directory {
 
-  padding: 1em 1.5em 2em 1.5em;
+  padding: 1em 1.5em 1.5em 1.5em;
   background-color: rgba(255,255,255,1);
   position: relative;
   -webkit-box-shadow: 0px 0px 14px 2px rgba(191,210,223,.3);
@@ -680,9 +702,40 @@ left:-8%
   border-bottom: 1px solid #e6e6e6;
   margin-bottom: 12px;
 }
-.directory p {
+.directory p,
+.forms p {
   margin-bottom: 10px;
   font-size: 18px;
+}
+
+.forms .top {
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 12px;
+}
+
+.forms {
+  padding: 1em 1.5em 1.5em 1.5em;
+  background-color: rgba(255,255,255,1);
+  position: relative;
+  -webkit-box-shadow: 0px 0px 14px 2px rgba(191,210,223,.3);
+  -moz-box-shadow: 0px 0px 14px 2px rgba(191,210,223,.3);
+  box-shadow: 0px 0px 14px 2px rgba(191,210,223,.3);
+  z-index: 1;
+  min-width: 350px;
+  right: 39px;
+}
+
+
+.forms::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-left: 23px solid white;
+  border-bottom: 15px solid transparent;
+  right: -12px;
+  top: 11px;
 }
 
 .directory label {
@@ -875,9 +928,68 @@ left:-8%
   background: #00467f;
 }
 
+.flipTwo {
+
+  background: white;
+  writing-mode: tb-rl;
+  width: 1px;
+  height: 20px;
+  margin-top: 0;
+  margin: 0em .6em;
+  opacity: 1;
+
+}
+
+.smaller {
+  font-size: 14px;
+}
+
+.lightBlue{
+  font-size:14px !important;
+  color:#02AEE4 !important;
+}
+
+.stickyBar .rel.showDiv .corresponding {
+  display: block;
+}
+
+
+.social {
+  padding-top:.5em;
+  min-width: 8em;
+  margin-left: 3em;
+
+}
+
+
+.social .fas{
+  color: #6d8ab2;
+  position: absolute;
+  z-index: 0;
+  font-size: 37px;
+  left: -11px;
+  top: -9px;
+
+}
+
+.social .fab{
+  color: white;
+  z-index:1;
+  position: relative;
+  font-size: 18px;
+}
 
 
 
+*:focus{
+  outline:none;
+}
+
+
+
+/* .showDiv {
+display: inline-block;
+}
 
 
 
