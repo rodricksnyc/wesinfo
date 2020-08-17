@@ -1,14 +1,15 @@
 main {
   position: relative;
+  padding:2em 4em
 }
+.padding-0 {
+  padding: 0em !important;
 
+}
 
 .carousel {
   min-height: 200px;
-  margin-bottom: 15px;
-}
-.carousel-indicators li {
-  box-shadow: 1px 1px 1px rgba(145, 145, 145, 0.5);
+  margin-bottom: 0px;
 }
 
 .active-p {
@@ -16,9 +17,150 @@ main {
     color: #fff;
 }
 
+.result {
+  height:100%;
+}
+
+.result p {
+  margin-bottom:0em !important
+}
+
 .author {
   padding-bottom: 20px;
   margin-top: 50px;
   text-align: center;
   font-size: 14px;
+}
+.carousel-item {
+  max-height:400px;
+}
+
+.sliderBlock {
+  background: #EEF8FF;
+  height:25%;
+}
+
+.whiteBox {
+    padding:.6em;
+    background-color: white;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 15px 2px rgba(191,210,223,1);
+    -moz-box-shadow: 0px 0px 15px 2px rgba(191,210,223,1);
+    box-shadow: 0px 0px 14px 2px rgba(191,210,223,1);
+    z-index: 1;
+}
+
+.dates {
+display: flex;
+flex-direction: column;
+
+}
+
+.across{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom:.6rem;
+  border-bottom: 1px solid #d1d1d1;
+  padding-bottom: .6rem;
+}
+
+.ml1{
+  margin-left:1em;
+}
+
+.dateBlock {
+  height:4rem;
+  width:4rem;
+
+  background: pink;
+  margin-right:1em;
+}
+
+.bold{
+  font-weight:600;
+}
+
+.darkBlue {
+    color: #00467f;
+    font-size: 20px;
+
+}
+
+.employee {
+  max-width:8rem;
+  margin-right:1em;
+}
+
+.contentSpacer {
+  height:3vh;
+}
+
+.description{
+  max-width: 65%;
+
+
+}
+
+.description .aqua {
+  margin-bottom:0rem !important;
+
+}
+
+.employeeBlock .description {
+  font-size:15px;
+}
+
+.gray {
+  color:#666666
+}
+
+.aqua {
+    color:#0e7b9b;
+}
+
+.light{
+  color:#0e7b9b;
+  font-weight:300;
+}
+
+.nav-item {
+    width: 50%;
+}
+
+ .nav-tabs .nav-link.active {
+    background-color: white;
+    color:#0e7b9b !important;
+    border-color: transparent !important;
+    width: 100%;
+    text-align: center;
+    border-radius: 0px;
+    padding:.5em 1em;
+    font-weight:700
+}
+
+ .nav-tabs .nav-link {
+    background-color:#EEF8FF;
+    padding:.5em 1em;
+    color:black;
+    font-weight: 300
+}
+
+.whiteBox .nav-item:hover {
+    background: #0e7b9b;
+    /* max-width: 102px; */
+    border-bottom: none;
+}
+
+.whiteBox .nav-tabs .nav-link {
+    border: none;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+}
+.whiteBox .nav-item:hover .nav-link {
+    font-weight: 300;
+   color: black;
+}
+.whiteBox .nav-item:hover .nav-link.active  {
+  font-weight: 700
 }

@@ -101,47 +101,42 @@ $(".stickyBar .rel .corresponding").mouseleave(function(){
 
 
 
-	// var proxy = 'https://cors-anywhere.herokuapp.com/';
 
-	var Ip = 'https://ipinfo.io/json';
-
-	$.getJSON(Ip, function(data) {
-		var city = data.city;
-		var region = data.region;
-		var country = data.country;
-
-		// var KEY = '&APPID=b2f2b923be22181ef89baa544605b888';
-
-		var proxy = 'https://cors-anywhere.herokuapp.com/';
-		// var apiLinkDS = "https://api.darksky.net/forecast/e6af5b5feb891b272e18f5e2fc0370a6/38,-122";
-
-
-		var URL = 'http://api.openweathermap.org/data/2.5/weather?id=4367175&appid=b2f2b923be22181ef89baa544605b888'
-
-		// var URL ='http://api.openweathermap.org/data/2.5/weather?q=' + city + ',' + region + country + KEY;
-
-		$.getJSON(proxy + URL, function(data) {
-			var type = data.weather[0].main;  //array 0 index
-			var id = data.weather[0].id; //array 0 index
-			var city = data.name;
-
-			var tempCel = Math.round(data.main.temp - 273.15);
-			var tempC = tempCel + '°C';
-			var weather = data.weather[0].description;
-			// var tempF = Math.round(tempCel * (9 / 5) + 32) +  "<p>" +  "&deg; F" + "</p>" ;
-			var icon = data.weather[0].icon;
-			var tempBool = true;
-
-			//Output data to display on the page
-			$('#city').text(city);
-			$('#state').text(region);
-			$("#temp").html("<p>" + Math.round(tempCel * (9 / 5) + 32) +  "&deg; F" + "</p>");
-			var weatherIcon = 'http://openweathermap.org/img/w/' + icon + '.png';
-			$('#wIcon').html('<img src=' + weatherIcon + '>');
-
-
-		});
-	});
+	// var Ip = 'https://ipinfo.io/json';
+	//
+	// $.getJSON(Ip, function(data) {
+	// 	var city = data.city;
+	// 	var region = data.region;
+	// 	var country = data.country;
+	//
+	//
+	// 	var proxy = 'https://cors-anywhere.herokuapp.com/';
+	//
+	// 	var URL = 'http://api.openweathermap.org/data/2.5/weather?id=4367175&appid=b2f2b923be22181ef89baa544605b888'
+	//
+	//
+	// 	$.getJSON(proxy + URL, function(data) {
+	// 		var type = data.weather[0].main;  //array 0 index
+	// 		var id = data.weather[0].id; //array 0 index
+	// 		var city = data.name;
+	//
+	// 		var tempCel = Math.round(data.main.temp - 273.15);
+	// 		var tempC = tempCel + '°C';
+	// 		var weather = data.weather[0].description;
+	// 		// var tempF = Math.round(tempCel * (9 / 5) + 32) +  "<p>" +  "&deg; F" + "</p>" ;
+	// 		var icon = data.weather[0].icon;
+	// 		var tempBool = true;
+	//
+	// 		//Output data to display on the page
+	// 		$('#city').text(city);
+	// 		$('#state').text(region);
+	// 		$("#temp").html("<p>" + Math.round(tempCel * (9 / 5) + 32) +  "&deg; F" + "</p>");
+	// 		var weatherIcon = 'http://openweathermap.org/img/w/' + icon + '.png';
+	// 		$('#wIcon').html('<img src=' + weatherIcon + '>');
+	//
+	//
+	// 	});
+	// });
 
 	//508 tabbing
 
