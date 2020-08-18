@@ -293,9 +293,9 @@ max-height:8.5rem
 }
 
 .smallBubble i {
-  font-size:28px;
-  margin-top:-.2em;
-  margin-bottom:.2em;
+  font-size:24px;
+  margin-top:-.6em;
+  margin-bottom:.3em;
   color: #00467f;
 }
 

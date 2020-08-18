@@ -1,4 +1,4 @@
-
+  
   var block = {"blocks": [{
   	"title": 'Forms',
   	"icon": '<i class="fal fa-file-alt"></i>'
@@ -54,4 +54,4 @@
 
 
 
-module.exports = block;
+  module.exports = block;
