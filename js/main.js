@@ -18,54 +18,9 @@ $(document).ready(function() {
 
 
   //create and append teacher divs with objects
-
-var block = {"blocks": [{
-	"title": 'Forms',
-	"icon": '<i class="fal fa-file-alt blue"></i>'
-},
-
-{
-  "title": 'Schedules',
-	"icon": "<i class='fas fa-file-export darkBlue'></i>"
-},
-
-{
-  "title": 'Policies',
-	"icon": "<i class='fas fa-file-export darkBlue'></i>"
-},
-
-{
-  "title": 'On Campus',
-	"icon": "<i class='fas fa-file-export darkBlue'></i>"
-},
-
-{
-  "title": 'Proposal Central',
-	"icon": "<i class='fas fa-file-export darkBlue'></i>"
-},
-{
-  "title": 'Institutional  Review Board',
-	"icon": "<i class='fas fa-file-export darkBlue'></i>"
-},
-{
-  "title": 'Training',
-	"icon": "<i class='fas fa-file-export darkBlue'></i>"
-},
-{
-  "title": 'Benefits',
-	"icon": "<i class='fas fa-file-export darkBlue'></i>"
-},
-
-{
-  "title": 'Workday',
-	"icon": "<i class='fas fa-file-export darkBlue'></i>"
-}
+var block = require("./data/config.js");
 
 
-
-]
-
-};
 
 for(var j in block.blocks) {
 
