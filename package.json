@@ -2,9 +2,10 @@
   "name": "wesinfo",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+
+     "build": "babel src -d build"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,13 @@
   },
   "homepage": "https://github.com/rodricksnyc/wesinfo#readme",
   "dependencies": {
-    "babel": "^6.23.0",
     "require": "^2.4.20",
     "requirejs": "^2.3.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
   }
 }
