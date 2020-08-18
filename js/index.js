@@ -151,6 +151,9 @@ $(".stickyBar .rel .corresponding").mouseleave(function(){
 		$(this).css('outline', 'none')
 	})
 
+	//adding Popular resources
+
+
 
 
 });
