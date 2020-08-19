@@ -1,8 +1,8 @@
 
 
+export function hello() {
 
-
-const block = {
+var block = {
     "blocks": [
       {
         "title": 'Forms',
@@ -20,4 +20,5 @@ const block = {
       }]
 };
 
-export { block };
+return "Hello";
+}
