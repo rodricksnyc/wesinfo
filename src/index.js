@@ -68,9 +68,8 @@ $(document).ready(function() {
     // };
 
 
-const block = require('./config.js');
-  // 
-  // import { block } from './config.js';
+
+  import { block } from './config.js';
 
   for(var j in block.blocks) {
 
