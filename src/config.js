@@ -20,4 +20,4 @@ const block = {
 
 }
 
-// export block;
+export default;
