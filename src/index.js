@@ -67,7 +67,9 @@ $(document).ready(function() {
     //
     // };
 
+    import MyDefaultComponent from "./config.js";
 
+  // import { block } from './src/config.js';
 
   for(var j in block.blocks) {
 

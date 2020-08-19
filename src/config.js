@@ -1,8 +1,8 @@
 
+const MyComponent = () => {
 
-export function hello() {
 
-var block = {
+const block = {
     "blocks": [
       {
         "title": 'Forms',
@@ -20,5 +20,8 @@ var block = {
       }]
 };
 
-return "Hello";
 }
+
+export default MyComponent;
+
+// export { block };
