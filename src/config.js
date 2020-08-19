@@ -1,5 +1,5 @@
 
-const MyComponent = () => {
+
 
 
 const block = {
@@ -20,8 +20,4 @@ const block = {
       }]
 };
 
-}
-
-export default MyComponent;
-
-// export { block };
+export { block };

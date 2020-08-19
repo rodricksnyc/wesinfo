@@ -67,9 +67,10 @@ $(document).ready(function() {
     //
     // };
 
-    import MyDefaultComponent from "./config.js";
 
-  // import { block } from './src/config.js';
+const block = require('./config.js');
+  // 
+  // import { block } from './config.js';
 
   for(var j in block.blocks) {
 
