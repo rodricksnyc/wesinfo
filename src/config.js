@@ -1,7 +1,5 @@
 
-
-
-
+export default {
 const block = {
     "blocks": [
       {
@@ -20,4 +18,6 @@ const block = {
       }]
 };
 
-export { block };
+}
+
+// export block;
