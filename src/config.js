@@ -1,6 +1,4 @@
 
-const MyComponent = () => {
-
 
 const block = {
     "blocks": [
@@ -22,4 +20,4 @@ const block = {
 
 }
 
-export default MyComponent;
+export { block };
