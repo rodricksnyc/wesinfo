@@ -1,3 +1,7 @@
+  const spriteLogger = (spriteArr) => {
+
+
+
 const block = {
     "blocks": [
       {
@@ -16,4 +20,8 @@ const block = {
       }]
 };
 
-export { block };
+// export { block };
+
+}
+
+export default spriteLogger;
