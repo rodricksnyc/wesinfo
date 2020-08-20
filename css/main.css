@@ -299,7 +299,57 @@ max-height:8.5rem
   color: #00467f;
 }
 
-@media (min-width: 1300px) {
+.carousel .carousel-indicators li {
+    background-color: black;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+}
+
+.carousel-indicators li {
+    box-sizing: content-box;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+.highlights{
+  position: relative;
+}
+
+.carousel-indicators {
+    position: relative;
+    right: 0;
+    bottom: 0px;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+
+@media (min-width: 1451px) {
 .popularR .col-lg-2 {
     -ms-flex: 0 0 20% !important;
     flex: 0 0 20% !important;
@@ -310,7 +360,7 @@ max-height:8.5rem
 
 
 
-@media (min-width: 992px) and (max-width:1299px){
+@media (min-width: 992px) and (max-width:1450px){
 .popularR .col-lg-2 {
     -ms-flex: 0 0 50% !important;
     flex: 0 0 50% !important;
