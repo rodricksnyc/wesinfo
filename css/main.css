@@ -237,7 +237,12 @@ overflow-y: auto;
 }
 
 .news p {
-  margin-bottom:0em
+  margin-bottom: 0em;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 340px;
+
 }
 
 .news .description {
