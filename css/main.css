@@ -14,7 +14,7 @@ main {
 
 .active-p {
   background: #00BCD4;
-    color: #fff;
+  color: black;
 }
 
 .result {
@@ -380,5 +380,14 @@ max-height:8.5rem
     -ms-flex-pack: justify!important;
     justify-content: space-between!important;
     flex-direction:column !important
+}
+}
+
+@media (max-width:991px) {
+  .mr1 {
+    margin-right: 0em;
+}
+.ml1 {
+    margin-left: 0em;
 }
 }

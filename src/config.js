@@ -52,6 +52,6 @@ const block = {"blocks": [{
 
 };
 
-}
+
 
 export { block };

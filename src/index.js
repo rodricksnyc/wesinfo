@@ -8,7 +8,7 @@ $(document).ready(function() {
   	var currentIndex = $(this).find(".active").index();
 
 
-    $('.result p')
+    $('.sliderBlock')
       .removeClass('active-p')
       .eq(currentIndex)
       .addClass('active-p');
@@ -68,7 +68,6 @@ $(document).ready(function() {
     // };
 
 
-  import { block } from './config.js';
 
   for(var j in block.blocks) {
 
@@ -94,3 +93,6 @@ $(document).ready(function() {
 
 
 })
+
+
+  import { block } from './config.js';
