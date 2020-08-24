@@ -1,102 +1,49 @@
 <!doctype html>
 <html lang="en"><head><meta content-type="text/plain" charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>IxD</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wesinfo</title>
 
-<link type="image/png" href="images/favicon.ico" rel="icon">
+  <link type="image/png" href="images/favicon.ico" rel="icon">
+  <link rel="stylesheet" href="vendorlibs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/wesinfo.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="vendorlibs/font-awesome-pro/css/all.css">
+  <link rel="stylesheet" href="vendorlibs/normalize.min.css">
 
-<link rel="stylesheet" href="css/normalize.min.css">
-<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
-<link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" type="text/css" href="font-awesome-pro/css/all.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
-<link rel="stylesheet" href="fontawesome/css/all.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-
-  <nav class="navbar">
-    <a href="#" class="toggle"><i class="fa fa-reorder"></i></a>
-
-    <a href="#" class="brand"><h1 class="white">Wes<span class="strong">Info</span></h1></a>
-
-    <div class="left">
-      <div class="flip"></div>
-      <a href="#" class="link">
-        <i class="fal fa-users"></i>
-        <p class="smaller">Employee</p>
-      </a>
-      <a href="#" class="link">
-        <i class="fal fa-info-circle"></i>
-        <p class="smaller">About Westat</p>
-      </a>
-      <a href="#" class="link">
-        <i class="fal fa-chart-bar"></i>
-        <p class="smaller less">Proposals<br>&amp; Projects</p>
-      </a>
-
-      <a href="#" class="link">
-        <i class="fal fa-desktop-alt"></i>
-        <p class="smaller">Technology</p>
-      </a>
-      <div class="flip"></div>
-
-      <a href="#" class="link">
-        <i class="fal fa-shield-check"></i>
-        <p class="smaller less">Special<br>Access</p>
-      </a>
 
 
-    </div>
+  <div class="container">
 
 
+    <div class="row">
+      <div class="col-md-12">
 
-    <div class="right">
+        <div class="contentSpacer"></div>
 
-      <div class="top-search-input-wrapper">
-        <input id="term_input" class="form-control allResults" placeholder="Enter search term here (i.e. timesheet, etc.)" type="text" name="search">
-        <button class="wesinfo-hide-btn" role="submit">
 
-          <i class="fal fa-search allResults t-white f-16"></i>
-        </button>
-      </div>
-      <div class="weather-api">
-        <div class="vertical3">
-          <p class="whiteLarge">Weather</p>
-          <p class="whiteLarge">77°</p>
+        <div class="row popularR">
 
         </div>
-
-          <i class="fas fa-cloud-sun-rain"></i>
-
       </div>
-<div class="end">
-      <a href="#" class="link"><button class="user"><p class="smaller name">John Doe</p></button></a>
     </div>
-
   </div>
-  </nav>
-
-</header>
 
 
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
 
+  <script type="text/javascript" src="vendorlibs/jquery.min.js"></script>
 
-<script>
-$(".toggle").on("click", function() {
-  $(".toggle").parent().toggleClass('active');
-});
-</script>
+  <script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <!-- <script type="text/javascript" src="build/index.js"></script> -->
+  <script type="module"  src="src/index.js"></script>
 
 
 
-</body></html>
+</body>
+</html>
