@@ -8,6 +8,8 @@ $(document).ready(function () {
 		$('.sliderBlock').removeClass('active-p').eq(currentIndex).addClass('active-p')
 	})
 
+  console.log("what the fuck")
+
 	// var block = {"blocks": [{
 	// 	"title": 'Forms',
 	// 	"icon": '<i class="fal fa-file-alt"></i>'
