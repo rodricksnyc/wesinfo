@@ -30,7 +30,7 @@ const block = {"blocks": [{
   "icon": '<i class="fal fa-folders"></i>'
 },
 {
-  "title": 'Proposal Central',
+  "title": 'Institutional Review Board',
   "icon": '<i class="fal fa-search"></i>'
 },
 {
